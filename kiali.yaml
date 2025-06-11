@@ -115,14 +115,12 @@ data:
     external_services:
       grafana:
         enabled: true
-        auth:
-          insecure_skip_verify: false
-          password: "prom-operator"
-          username: "admin"
-        in_cluster_url: http://monitoring-grafana.monitoring.svc:80
+        #auth:
+        #  insecure_skip_verify: false
+        #  password: "prom-operator"
+        #  username: "admin"
         url: http://monitoring-grafana.monitoring.svc:80
       prometheus:
-        custom_metrics_url: http://monitoring-kube-prometheus-prometheus.monitoring.svc:9090
         url: http://monitoring-kube-prometheus-prometheus.monitoring.svc:9090
       custom_dashboards:
         enabled: true
