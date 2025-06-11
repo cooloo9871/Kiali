@@ -114,7 +114,7 @@ data:
       view_only_mode: false
     external_services:
       grafana:
-        enabled: true
+        enabled: false
         #auth:
         #  insecure_skip_verify: false
         #  password: "prom-operator"
