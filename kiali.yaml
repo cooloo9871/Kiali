@@ -119,7 +119,8 @@ data:
         #  insecure_skip_verify: false
         #  password: "prom-operator"
         #  username: "admin"
-        url: http://monitoring-grafana.monitoring.svc:80
+        in_cluster_url: http://monitoring-grafana.monitoring.svc:80
+        #url: http://monitoring-grafana.monitoring.svc:80
       prometheus:
         url: http://monitoring-kube-prometheus-prometheus.monitoring.svc:9090
       custom_dashboards:
